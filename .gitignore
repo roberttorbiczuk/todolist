@@ -3,3 +3,5 @@
 **/*.pyc
 /static/**
 /venv
+/tmp/**
+/logs/**
