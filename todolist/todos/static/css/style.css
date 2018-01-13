@@ -1,0 +1,22 @@
+a {
+    color: green;
+}
+
+thead {
+  float: left;
+}
+thead th {
+  display: block;
+}
+
+tbody {
+  float: left;
+}
+
+tbody tr {
+  display: block;
+  float: left;
+}
+tbody td {
+  display: block;
+}

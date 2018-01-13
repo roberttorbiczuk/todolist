@@ -1,0 +1,11 @@
+{% include 'partials/header.html' %}
+<form action="{% url 'delete' %}" method="post">
+    {%csrf_token%}
+<ul>
+    {%for todo in todos%}
+    <li>{{todo.id}} {{todo.title }}   <input type="submit" value="Delete" name="{{todo.id}}"/></li>
+    {% endfor %}
+</ul>
+</form>
+<a href="/todos">Go Back</a>
+{% include 'partials/footer.html' %}
