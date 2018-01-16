@@ -4,6 +4,7 @@
     <h1>{{ todo.title }}</h1>
     <p>{{ todo.text }}</p>
     <br>
-    Created on {{ todo.created_at }}
+    Created on {{ todo.created_at }}<br>
+    Deadline is to {{todo.deadline}}
 
 {% include 'partials/footer.html' %}

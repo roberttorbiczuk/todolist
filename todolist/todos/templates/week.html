@@ -1,0 +1,12 @@
+{% include 'partials/header.html' %}
+
+<h2>In this week:</h2>
+<table>
+<tr>
+{%for i  in deadline %}
+    <td><a href="/todos/details/{{i.id}}"> {{ i }}</a></td>
+{%endfor%}
+</tr>
+</table>
+
+{% include 'partials/footer.html' %}

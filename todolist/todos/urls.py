@@ -7,5 +7,7 @@ urlpatterns = [
     url(r'^details/(?P<id>\w{0,50})/$', views.details),
     url(r'^add', views.add, name='add'),
     url(r'^delete', views.delete, name='delete'),
+    url(r'^day', views.one_day, name='day'),
+    url(r'^week', views.week, name='week'),
 
 ]

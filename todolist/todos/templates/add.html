@@ -1,4 +1,6 @@
 {% include 'partials/header.html' %}
+{{deadline_time}}
+{{deadline_date}}
 <form action="{% url 'add' %}" method="post">
     {%csrf_token%}
     <label for="title">Title</label><br/>
@@ -8,7 +10,8 @@
     <textarea name="text" id="text"></textarea>
     <br>
     <label>Deadline</label><br/>
-    <input type="date" name="deadline"/>
+    <input type="date" name="date"/>
+    <input type="time" name="time"/>
     <br><br>
     <input type="submit" value="Submit"/>
 </form>
